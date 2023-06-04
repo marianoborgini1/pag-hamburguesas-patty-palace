@@ -709,7 +709,7 @@ input[type=submit]:hover {
 }
 
 
-@media only screen and (max-width : 403px) { /*Tamaño para Celular*/
+@media only screen and (max-width : 420px) { /*Tamaño para Celular*/
 
     header{
         position: fixed;
@@ -726,7 +726,7 @@ input[type=submit]:hover {
         display: block;
         color: black;
         text-align: center;
-        padding-left: 40px;
+        padding-left: 65px;
         text-decoration: none;
         font-size: 15px;
         font-weight: bold;
