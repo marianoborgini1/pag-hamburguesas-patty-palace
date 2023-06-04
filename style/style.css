@@ -32,6 +32,21 @@ header{
     color: #9f3636;
 }
 
+#img{
+    padding-top: 300px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)  
+    ) 
+    ,url("../img/fondo-hamburguesa-section.jpg");
+
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center center;
+    height: 220px;
+}
+
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -426,9 +441,24 @@ input[type=submit]:hover {
         font-size: 15px;
         font-weight: bold;
     }
+
+    #img{
+        padding-top: 350px;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)  
+        ) 
+        ,url("../img/fondo-hamburguesa-section.jpg");
+    
+        background-repeat: no-repeat ;
+        background-size: cover;
+        background-position: center center;
+        height: 200px;
+    }
 }
 
-@media only screen and (max-width : 770px) { /*Tamaño para Celular*/
+@media only screen and (max-width : 700px) { /*Tamaño para Celular*/
 
     header{
         position: fixed;
@@ -455,6 +485,21 @@ input[type=submit]:hover {
         font-weight: bold;
     }
 
+    #img{
+        padding-top: 350px;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)  
+        ) 
+        ,url("../img/fondo-hamburguesa-section.jpg");
+    
+        background-repeat: no-repeat ;
+        background-size: cover;
+        background-position: center center;
+        height: 170px;
+    }
+
     #pedidos h2{
         padding-left: 20px;
         color: #f1f1f1;
@@ -462,7 +507,7 @@ input[type=submit]:hover {
 
 }
 
-@media only screen and (max-width : 550px) { /*Tamaño para Celular*/
+@media only screen and (max-width : 509px) { /*Tamaño para Celular*/
 
     header{
         position: fixed;
@@ -479,7 +524,7 @@ input[type=submit]:hover {
         display: block;
         color: black;
         text-align: center;
-        padding-left: 75px;
+        padding-left: 65px;
         text-decoration: none;
         font-size: 15px;
         font-weight: bold;
@@ -555,7 +600,7 @@ input[type=submit]:hover {
     
 }
 
-@media only screen and (max-width : 420px) { /*Tamaño para Celular*/
+@media only screen and (max-width : 470px) { /*Tamaño para Celular*/
 
     header{
         position: fixed;
@@ -572,10 +617,25 @@ input[type=submit]:hover {
         display: block;
         color: black;
         text-align: center;
-        padding-left: 45px;
+        padding-left: 50px;
         text-decoration: none;
         font-size: 15px;
         font-weight: bold;
+    }
+
+    #img{
+        padding-top: 320px;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)  
+        ) 
+        ,url("../img/fondo-hamburguesa-section.jpg");
+    
+        background-repeat: no-repeat ;
+        background-size: cover;
+        background-position: center center;
+        height: 170px;
     }
 
     h1{
@@ -649,7 +709,7 @@ input[type=submit]:hover {
 }
 
 
-@media only screen and (max-width : 415px) { /*Tamaño para Celular*/
+@media only screen and (max-width : 403px) { /*Tamaño para Celular*/
 
     header{
         position: fixed;
@@ -666,7 +726,7 @@ input[type=submit]:hover {
         display: block;
         color: black;
         text-align: center;
-        padding-left: 48px;
+        padding-left: 40px;
         text-decoration: none;
         font-size: 15px;
         font-weight: bold;
@@ -759,7 +819,7 @@ input[type=submit]:hover {
         display: block;
         color: black;
         text-align: center;
-        padding-left: 40px;
+        padding-left: 35px;
         text-decoration: none;
         font-size: 15px;
         font-weight: bold;
