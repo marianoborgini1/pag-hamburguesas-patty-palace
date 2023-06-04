@@ -1,0 +1,838 @@
+body{
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.topnav {
+    background-color: #f2f2f2;
+    overflow: hidden;
+    display: flex;
+    min-height: 65px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding-top: 23px;
+    padding-left: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.topnav a:hover {
+    color: #9f3636;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+section{
+    padding-left: 120px;
+}
+
+h1{
+    font-size: 35px;
+    font-style: oblique;
+}
+
+#inicio{
+    padding-left: 190px;
+}
+
+.hamburguesas{
+    display: flex;
+    padding-left: 165px ;
+}
+
+.menu{
+    padding-left: 70px;
+    font-size: 20px;
+    width: 70%;
+    padding-bottom: 2px;
+}
+
+#nosotros{
+    padding-left: 155px;
+    font-size: 20px;
+    width: 75%;
+    padding-bottom: 65px;
+}
+
+span{
+    color: #9f3636;
+    font-weight: bold;
+}
+
+hr{
+    border: solid 1.5px;
+    width: 80%;
+    color: #9f3636;
+}
+
+.icon{
+    display: flex;
+    padding: 0;
+}
+
+video{
+    padding-top: 40px;
+    width: 100%;
+    height: 450px;
+    background-color: #000;
+}
+
+
+.container {
+    position: relative;
+    padding-left: 10px;
+}
+
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+    text-align: center;
+    background-color: #222;
+}
+
+  /* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+  /* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+  /* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+  /* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #000;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+    
+}
+
+  /* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+    text-align: center;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+#pedidos{
+    margin-left: 212px;
+    padding-top: 20px;
+}
+
+#pedidos h2{
+    padding-left: 205px;
+    color: #f1f1f1;
+}
+
+form{
+    color: white;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical;
+}
+
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #9f3636;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #ccc;
+}
+
+  /* Add a background color and some padding around the form */
+#container {
+    border-radius: 5px;
+    background-color: black;
+    padding: 40px;
+    width: 60%;
+}
+
+@media only screen and (max-width : 1024px) { /*Tamaño para Celular*/
+
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: #f2f2f2;
+    }
+
+    .logo{
+        text-align: center;
+    }
+    
+    .topnav {
+        display: inline;
+    }
+    
+    .topnav a {
+        padding-bottom: 10px;
+        display: block;
+        color: black;
+        text-align: center;
+        padding-left: 165px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    section{
+        padding-left: 10px;
+    }
+    
+    h1{
+        font-size: 35px;
+        font-style: oblique;
+    }
+    
+    #inicio{
+        padding-left: 10px;
+    }
+    
+    .hamburguesas{
+        display: flex;
+        padding-left: 200px ;
+        margin: 2px;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 20%;
+        margin: 1px;
+        text-align: center;
+    }
+
+    .card h1{
+        font-size: 18px;
+    }
+    
+    .card p{
+        font-size: 15px;
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 10px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+    }
+
+    .menu{
+        padding-left: 10px;
+        font-size: 15px;
+        width: 88%;
+        padding-bottom: 2px;
+    }
+    
+    #nosotros{
+        padding-left: 10px;
+        font-size: 15px;
+        width: 88%;
+        padding-bottom: 65px;
+    }
+
+    #pedidos h2{
+        padding-left: 20px;
+        color: #f1f1f1;
+    }
+
+}
+
+@media only screen and (max-width : 850px) { /*Tamaño para Celular*/
+
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: #f2f2f2;
+    }
+
+    .logo{
+        text-align: center;
+    }
+    
+    .topnav {
+        display: inline;
+    }
+    
+    .topnav a {
+        padding-bottom: 10px;
+        display: block;
+        color: black;
+        text-align: center;
+        padding-left: 140px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #pedidos h2{
+        padding-left: 20px;
+        color: #f1f1f1;
+    }
+
+    #pedidos{
+        margin-left: 155px;
+        padding-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width : 770px) { /*Tamaño para Celular*/
+
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: #f2f2f2;
+    }
+
+    .logo{
+        text-align: center;
+    }
+    
+    .topnav {
+        display: inline;
+    }
+    
+    .topnav a {
+        padding-bottom: 10px;
+        display: block;
+        color: black;
+        text-align: center;
+        padding-left: 115px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width : 770px) { /*Tamaño para Celular*/
+
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: #f2f2f2;
+    }
+
+    .logo{
+        text-align: center;
+    }
+    
+    .topnav {
+        display: inline;
+    }
+    
+    .topnav a {
+        padding-bottom: 10px;
+        display: block;
+        color: black;
+        text-align: center;
+        padding-left: 100px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #pedidos h2{
+        padding-left: 20px;
+        color: #f1f1f1;
+    }
+
+}
+
+@media only screen and (max-width : 550px) { /*Tamaño para Celular*/
+
+    header{
+        position: fixed;
+        width:  100%;
+        background-color: #f2f2f2;
+    }
+    
+    .topnav {
+        display: inline;
+    }
+    
+    .topnav a {
+        padding-bottom: 10px;
+        display: block;
+        color: black;
+        text-align: center;
+        padding-left: 75px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .hamburguesas{
+        display: flex;
+        padding-left: 10px ;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 30%;
+        margin: 1px;
+        text-align: center;
+    }
+
+    .card h1{
+        font-size: 12px;
+    }
+    
+    .card .title{
+        display: none;
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 10px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+    }
+
+    .menu{
+        font-size: 15px;
+        width: 90%;
+        padding-bottom: 2px;
+    }
+
+    #pedidos{
+        margin-left: 85px;
+        padding-top: 10px;
+    }
+    
+    #pedidos h2{
+        padding-left: 20px;
+        color: #f1f1f1;
+    }
+
+    #nosotros{
+        padding-left: 10px;
+        font-size: 15px;
+        width: 90%;
+        padding-bottom: 65px;
+    }
+
+
+    
+}
+
+@media only screen and (max-width : 420px) { /*Tamaño para Celular*/
+
+    header{
+        position: fixed;
+        width:  100%;
+        background-color: #f2f2f2;
+    }
+    
+    .topnav {
+        display: inline;
+    }
+    
+    .topnav a {
+        padding-bottom: 10px;
+        display: block;
+        color: black;
+        text-align: center;
+        padding-left: 45px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .hamburguesas{
+        display: flex;
+        padding-left: 10px ;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 30%;
+        margin: 1px;
+        text-align: center;
+    }
+
+    .card h1{
+        font-size: 12px;
+    }
+    
+    .card .title{
+        display: none;
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 10px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+    }
+
+    .menu{
+        font-size: 15px;
+        width: 90%;
+        padding-bottom: 2px;
+    }
+
+    #pedidos{
+        margin-left: 48px;
+        padding-top: 10px;
+    }
+    
+    #pedidos h2{
+        padding-left: 20px;
+        color: #f1f1f1;
+    }
+
+    #nosotros{
+        padding-left: 10px;
+        font-size: 15px;
+        width: 90%;
+        padding-bottom: 65px;
+    }
+
+
+    
+}
+
+
+@media only screen and (max-width : 415px) { /*Tamaño para Celular*/
+
+    header{
+        position: fixed;
+        width:  100%;
+        background-color: #f2f2f2;
+    }
+    
+    .topnav {
+        display: inline;
+    }
+    
+    .topnav a {
+        padding-bottom: 10px;
+        display: block;
+        color: black;
+        text-align: center;
+        padding-left: 48px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .hamburguesas{
+        display: flex;
+        padding-left: 10px ;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 30%;
+        margin: 1px;
+        text-align: center;
+    }
+
+    .card h1{
+        font-size: 12px;
+    }
+    
+    .card .title{
+        display: none;
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 10px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+    }
+
+    .menu{
+        font-size: 15px;
+        width: 90%;
+        padding-bottom: 2px;
+    }
+
+    #pedidos{
+        margin-left: 48px;
+        padding-top: 10px;
+    }
+    
+    #pedidos h2{
+        padding-left: 20px;
+        color: #f1f1f1;
+    }
+
+    #nosotros{
+        padding-left: 10px;
+        font-size: 15px;
+        width: 90%;
+        padding-bottom: 65px;
+    }
+
+
+    
+}
+
+@media only screen and (max-width : 375px) { /*Tamaño para Celular*/
+
+    header{
+        position: fixed;
+        width:  100%;
+        background-color: #f2f2f2;
+    }
+    
+    .topnav {
+        display: inline;
+    }
+    
+    .topnav a {
+        padding-bottom: 10px;
+        display: block;
+        color: black;
+        text-align: center;
+        padding-left: 40px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .hamburguesas{
+        display: flex;
+        padding-left: 10px ;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 30%;
+        margin: 1px;
+        text-align: center;
+    }
+
+    .card h1{
+        font-size: 12px;
+    }
+    
+    .card .title{
+        display: none;
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 10px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+    }
+
+    .menu{
+        font-size: 15px;
+        width: 90%;
+        padding-bottom: 2px;
+    }
+
+    #pedidos{
+        margin-left: 48px;
+        padding-top: 10px;
+    }
+    
+    #pedidos h2{
+        padding-left: 20px;
+        color: #f1f1f1;
+    }
+
+    #nosotros{
+        padding-left: 10px;
+        font-size: 15px;
+        width: 90%;
+        padding-bottom: 65px;
+    }
+
+
+    
+}
+
+
